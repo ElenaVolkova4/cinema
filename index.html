@@ -6,20 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema</title>
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="img/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
 <body>
-
   <header class="header">
     <div class="navbar container">
       <a href="/">
         <img src="assets/images/logo.svg" alt="Logo"></a>
       <nav class="nav">
+        <button class="m-menu">
+          <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+            <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+            <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+          </svg>
+        </button>
         <ul class="menu">
           <li class="menu-item">
             <a href="/" class="menu-link">Главная</a>
@@ -51,8 +59,6 @@
       <div class="film-info">
         <small class="film-title-small">Avengers: Infinity War</small>
         <h1 class="film-title">Мстители: война бесконечности</h1>
-
-
         <p class="film-description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с
           которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический
           тиран
@@ -71,11 +77,10 @@
               <strong class="rating-current">9.2</strong> / 10
             </span>
           </div>
-
-
         </div>
       </div>
-      <a href="#" class="film-trailer">
+      <a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8" href="#"
+        class="film-trailer">
         <!-- на картинке в макете фигмы правой кнопкой мыши "скопировать как" svg, и сюда вставить -->
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="50" fill="white" />
@@ -115,11 +120,7 @@
             <span class="session-month">АПР</span>
             <span class="session-day">30</span>
             <span class="session-week">пн</span></div>
-
         </div>
-
-
-
       </div>
       <div class="session-cinema">
         <span class="session-label">Кинотеатр</span>
@@ -127,10 +128,7 @@
           <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
           <option value="IMAX, ул. Ленина 12">IMAX, ул. Ленина 12</option>
           <option value="CinemaMall, ул. Хороводная 5">CinemaMall, ул. Хороводная 5</option>
-
-
         </select>
-
       </div>
       <div class="session-time">
         <span class="session-label">Время</span>
@@ -141,12 +139,10 @@
         </select>
       </div>
     </div>
-
   </header>
 
   <div class="scheme container">
-    <svg class="scheme-svg" width="1170" height="600" viewBox="0 0 1170 600" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg class="scheme-svg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear)" />
       <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10" />
       <path class="booked"
@@ -520,7 +516,6 @@
             d="M0.390625 24.5C0.390625 24.5256 0.391608 24.5512 0.393571 24.5767C0.486973 25.7909 0.92738 27.5963 1.97857 29.1283C3.05641 30.6991 4.79938 32 7.39062 32H29.8906C29.9144 32 29.9382 31.9992 29.9619 31.9975C31.2891 31.9027 33.2417 31.3731 34.8862 30.0716C36.5712 28.7381 37.8906 26.6218 37.8906 23.5V14H35.8906V23.5C35.8906 25.9782 34.8767 27.5286 33.645 28.5034C32.3871 29.499 30.86 29.9212 29.8533 30H7.39062C5.58187 30 4.40817 29.1342 3.62768 27.9967C2.83084 26.8354 2.4702 25.4126 2.39062 24.46V14H0.390625V24.5ZM26.8906 1H10.8906C7.57692 1 4.89062 3.68629 4.89062 7V20C4.89062 23.3137 7.57692 26 10.8906 26H26.8906C30.2043 26 32.8906 23.3137 32.8906 20V7C32.8906 3.68629 30.2043 1 26.8906 1Z" />
         </svg>
         <span class="legend-text">Выбрано</span>
-
       </div>
       <div class="legend-booked legend-label">
         <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -536,15 +531,11 @@
     <div class="price-tag">
       <span class="price-label">Перейти к оплате</span>
       <span class="price-total">0</span><span class="ruble">₽</span>
-
     </div>
-
     <a href="#" class="button button-pay">Перейти к оплате</a>
-
-
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="assets/scripts/scripts.js"></script>
 </body>
 
