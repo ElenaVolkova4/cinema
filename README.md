@@ -10,4 +10,4 @@
 - Figma
 - Адаптивная верстка
 
-![gif](https://github.com/Itgirlschool-F7-team1/F7_js_team1/blob/main/assets/images/5rn280.gif)
+![gif](https://github.com/ElenaVolkova4/cinema/blob/a4d69da48de3ba39151e7ca1049b6c7c061d7ec8/assets/images/cinema_video.gif)
